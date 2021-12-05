@@ -34,7 +34,7 @@ import Foundation
 open class Interface : CustomStringConvertible, CustomDebugStringConvertible {
     public var id = UUID()
     /// The network interface family (IPv4 or IPv6).
-    public enum Family : Int {
+    public enum Family : Int, Codable {
         /// IPv4.
         case ipv4
         
